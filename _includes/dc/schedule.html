@@ -1,120 +1,127 @@
-<div class="row">
-  
-  <div class="col-md-3">
-    <h3 id="syllabus-r">Python Fundamentals</h3>
-    <ul>
-      <li>The Shell & Basic Syntax</li>
-      <li>Variables & Data Types</li>
-      <li>String Operations</li>
-      <li>Basic I/O with print()</li>
-      <li class="optional">Game Concept: Text Adventures</li>
-      <!--
-      <li><a href="https://futurecoder.io/course/#shell">Reference...</a></li>
-      -->
-    </ul>
-  </div>
-  
-  <div class="col-md-3">
-    <h3 id="syllabus-r">Control Flow & Data Structures</h3>
-    <ul>
-      <li>For/While Loops</li>
-      <li>If/Elif/Else Statements</li>
-      <li>Lists & List Methods</li>
-      <li>range() and len()</li>
-      <li>Nested Lists</li>
-      <li class="optional">Game Concept: Pacman Board Logic</li>
-      <!--
-      <li><a href="https://futurecoder.io/course/#lists">Reference...</a></li>
-      -->
-    </ul>
-  </div>
-  
-  <div class="col-md-3">
-    <h3 id="syllabus-r">Functions & Advanced Concepts</h3>
-    <ul>
-      <li>Defining Functions</li>
-      <li>Return Values & Scope</li>
-      <li>Dictionaries</li>
-      <li>Boolean Operators</li>
-      <li>f-strings</li>
-      <li>Debugging Tools</li>
-      <li class="optional">Game Concept: Character Stats</li>
-      <!--
-      <li><a href="https://futurecoder.io/course/#functions">Reference...</a></li>
-      -->
-    </ul>
-  </div>
-  
-  <div class="col-md-3">
-    <h3 id="syllabus-shell">Projects & Applications</h3>
-    <ul>
-      <li>Tic-Tac-Toe Project</li>
-      <li>Interactive Programs</li>
-      <li>File I/O Basics</li>
-      <li class="optional">Game Examples Included:</li>
-      <li class="optional">- Mario Platformer</li>
-      <li class="optional">- Space Invaders</li>
-      <li class="optional">- Puzzle Games</li>
-      <!--
-      <li><a href="https://futurecoder.io/course/#tictactoe">Reference...</a></li>
-      -->
-    </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">1-Day Python Programming Workshop</h2>
+      <p class="subtitle">Master the Basics • Build a Foundation • Explore Future Directions</p>
+    </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-6">
+      <div class="time-block core">
+        <h3><i class="fas fa-laptop-code"></i> Core Curriculum (Required)</h3>
+        <table class="table table-striped">
+          <tr> <td class="time">09:00</td>  <td><strong>Python Setup & Basics</strong><br>Installation, variables, data types</td> </tr>
+          <tr> <td class="time">09:45</td>  <td><strong>Control Flow</strong><br>If/else, comparisons, boolean logic</td> </tr>
+          <tr> <td class="time">10:30</td>  <td class="break">Morning Break</td> </tr>
+          <tr> <td class="time">10:45</td>  <td><strong>Loops & Lists</strong><br>For/while, range(), list methods</td> </tr>
+          <tr> <td class="time">11:30</td>  <td><strong>Functions</strong><br>Definition, parameters, return values</td> </tr>
+          <tr> <td class="time">12:15</td>  <td class="break">Lunch Break</td> </tr>
+          <tr> <td class="time">13:15</td>  <td><strong>Tic-Tac-Toe Project</strong><br>2D lists, game logic, debugging</td> </tr>
+          <tr> <td class="time">14:45</td>  <td class="break">Afternoon Break</td> </tr>
+          <tr> <td class="time">15:00</td>  <td><strong>Next Steps</strong><br>Resources, practice ideas</td> </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="time-block optional">
+        <h3><i class="fas fa-gamepad"></i> Optional Pygame Exploration</h3>
+        <div class="optional-content">
+          <h4>Available on USB Drive:</h4>
+          <ul>
+            <li><strong>Starter Templates</strong> - Blank project setups</li>
+            <li><strong>Game Examples</strong>:
+              <ul>
+                <li>Simple Pong (input handling)</li>
+                <li>Clicker Game (event loops)</li>
+                <li>Sprite Animation demo</li>
+              </ul>
+            </li>
+            <li><strong>Learning Path</strong>:
+              <ol>
+                <li>Install Pygame (instructions included)</li>
+                <li>Run example games</li>
+                <li>Modify variables to see changes</li>
+                <li>Try tutorial exercises</li>
+              </ol>
+            </li>
+          </ul>
+          <div class="note">
+            <i class="fas fa-lightbulb"></i> These materials are provided for self-paced learning after mastering Python basics
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  .col-md-3 {
-    width: 25%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-  
-  h3 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 8px;
-    margin-top: 0;
-  }
-  
-  ul {
-    padding-left: 20px;
-    list-style-type: none;
-  }
-  
-  li {
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 15px;
-  }
-  
-  li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #3498db;
-  }
-  
-  li.optional {
+  .subtitle {
+    text-align: center;
     color: #666;
+    margin-bottom: 30px;
     font-style: italic;
   }
   
-  li.optional:before {
-    content: "○";
-    color: #999;
+  .time-block {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .core { border-top: 4px solid #3498db; }
+  .optional { border-top: 4px solid #2ecc71; }
+  
+  .time {
+    width: 70px;
+    font-weight: bold;
+    color: #555;
+    vertical-align: top;
+  }
+  
+  .break {
+    background: #f1c40f;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .optional-content {
+    padding: 15px;
+  }
+  
+  .optional-content ul, .optional-content ol {
+    padding-left: 20px;
+  }
+  
+  .optional-content li {
+    margin-bottom: 8px;
+  }
+  
+  .note {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 0.9em;
+    border-left: 3px solid #2ecc71;
   }
   
   @media (max-width: 768px) {
-    .col-md-3 {
+    .col-md-6 {
       width: 100%;
+      margin-bottom: 20px;
     }
   }
 </style>
